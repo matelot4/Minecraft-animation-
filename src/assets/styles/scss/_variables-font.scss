@@ -1,0 +1,10 @@
+$couleur-terre: #423021;
+$couleur-terre-fonce: #281d15;
+$couleur-ciel: #acd2ff;
+$couleur-vert: #1aa709;
+
+@font-face {
+  font-family: "Minecraft";
+  src: url("/src/assets/fonts/minecraft-webfont.woff") format("woff"),
+    url("/src/assets/fonts/minecraft-webfont.woff2") format("woff2");
+}

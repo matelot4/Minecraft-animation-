@@ -1,0 +1,42 @@
+.minecraft-logo {
+  animation-name: bounceInDown;
+  animation-duration: 1s;
+}
+
+.container-texte {
+  animation-name: backInRight;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes spider-mobile{
+  0% {
+     transform: translate(0px)
+  }
+  100% {
+     transform: translate(250px);
+  }
+}
+
+@keyframes the-spider {
+  0% {
+    left: 0%;
+    top: 0%;
+  }
+  25% {
+    left: 13%;
+    top: 2%;
+  }
+  50% {
+    left: 13%;
+    top: 35%;
+  }
+  75% {
+    left: 40%;
+    top: 35%;
+  }
+  100% {
+    left: 40%;
+    top: 100%;
+  }
+}

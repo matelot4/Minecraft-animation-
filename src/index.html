@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/css/styles.css">
+    <title>Minecraft par Gabriel Leblanc</title>
+</head>
+
+<body>
+    <header>
+        <h1>Minecraft</h1>
+        <div class="container-header">
+            <a href="index.html">
+                            <img class="minecraft-logo" src="./assets/img/minecraft-logo-2.png" alt="Logo minecraft">
+            <!-- mis le texte dans un div car sinon c'est pas animable vu qu'il a une rotation sur mon texte -->
+            </a>
+            <div class="container-texte">
+                <p class="madeby ">Par Gabriel Leblanc</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="gazon">
+            <img class="nuage" src="./assets/img/cloud-minecraft.png"  alt="Nuage du jeu de Minecraft">
+            <div class="container-bloc">
+                <img class="poule animate__animated animation-scroll" data-animation="shakeY"
+                    src="./assets/img/chicken.png" alt="Poule du jeu minecraft">
+                <div class="bloc-txt">
+                    <h3>Un jeu d'aventure!</h3>
+                </div>
+            </div>
+            <img class="enderman animate__animated animation-scroll" data-animation="fadeOut"
+                src="./assets/img/slendermen.png" alt="Monstre enderman du jeu minecraft">
+            <img class="steve animate__animated  animation-scroll" data-animation="slideInLeft"
+                src="./assets/img/steve.png" alt="Personnage minecraft avec une épée en diamant">
+            <img class="ender-vol animate__animated animation-scroll" src="./assets/img/enderman-block.png"
+                data-animation="fadeIn" data-animation-delay="1000"
+                alt="Monstre enderman de minecraft avec un bloc de gazon">
+            <div class="bloc animate__animated animation-scroll" data-animation="fadeIn" data-animation-delay="500">
+            </div>
+        </section>
+
+        <section class="terre">
+            <div class="bloc-deco-terre-1"> </div>
+            <div class="bloc-deco-terre-2"> </div>
+            <div class="bloc-deco-terre-3"> </div>
+            <div class="introduction">
+                <figure>
+                    <img src="./assets/img/minecraft-cover.png" alt="Couverture du jeu minecraft">
+                    <figcaption>Poster du jeu de minecraft</figcaption>
+                </figure>
+                <h2>Minecraft, le jeu</h2>
+                <p class="intro-txt">Minecraft est un jeu vidéo de type aventure « bac à sable » développé par le
+                    Suédois
+                    Markus Persson, alias <i>Notch</i>, puis par la société Mojang Studios.
+                    Il s'agit d'un univers composé de voxels et généré
+                    aléatoirement, qui intègre un système d'artisanat axé sur
+                    l'exploitation puis la transformation de ressources naturelles
+                    (minéralogiques, fossiles, animales et végétales). Source: <a href="https://fr.wikipedia.org/wiki/Minecraft" target="_blank">Wikiepedia</a></p>
+                <p>
+
+                    Minecraft mélange construction et aventure. Il permet à ses joueurs de
+                    manipuler un monde en trois dimensions, composé entièrement
+                    de blocs à détruire, placer et transformer. Jouable en solo
+                    ou en multijoueur, différents modes de jeu sont disponibles
+                    : survie et créatif. Source: <a href="https://minecraft.fandom.com/fr/wiki/Minecraft_Wiki" target="_blank">minecraft fandom</a>
+                </p>
+
+            </div>
+
+            <img class="spider" src="./assets/img/spiderwhite.png" target="_blank" alt="Araignée du jeu de minecraft">
+
+            <div class="biomes">
+                <h2>Les biomes</h2>
+                <p>Le monde de minecraft est composé de plusieurs biômes. Les
+                    biomes sont des régions dans un monde Minecraft avec différentes
+                    caractéristiques géographiques – végétaux, hauteurs, climats,
+                    degrés d'humidité, couleurs de ciel, de feuillage ou de l'eau.
+                    Ils peuvent aussi abriter des structures naturelles et des
+                    créatures spéciales.</p>
+
+                <p>Les biomes sont créés aléatoirement pendant la génération du
+                    monde. Il existe 67 biomes dans monde normal, 5 biomes dans le
+                    Nether, 5 biomes dans l'End et 3 biomes inutilisés pour un total
+                    de 79 biomes en comptant toutes les variations et les biomes
+                    techniques — la plupart des biomes étant des variations des
+                    biomes principaux (forêts, prairies, montagnes, déserts,
+                    océans). Source: <a href="https://minecraft.fandom.com/fr/wiki/Biome" target="_blank">minecraft fandom</a></p>
+            </div>
+            <div class="bloc-deco-terre-4"> </div>
+
+            <div class="container-chest">
+                <button type="button" class="chest-btn" aria-label="Ouvrir"><img
+                        class="chest animate__animated animation-scroll" data-animation="shakeX"
+                        src="./assets/img/chest.png" alt="Coffre minecraft"></button>
+            </div>
+
+            <div id="modale" class="modale-chest">
+                <div class="contenu-modale">
+                    <button class="fermer-modale" type="button" aria-label="Fermer">&times;</button>
+                    <div class="dessin-creeper">
+                        <canvas id="dessin"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloc-coupe-roche">
+            </div>
+        </section>
+
+        <section class="roche">
+            <div class="creature animate__animated animation-scroll" data-animation="backInUp">
+                <h2>Les créatures</h2>
+                <p>Les créatures ou <i>mobs</i>, abréviation de « mobiles », sont
+                    les différentes entités – animaux, monstres, personnages
+                    non-joueurs –, qui se déplacent par elles-mêmes et ont des
+                    modèles de comportement déterminés.</p>
+
+                <p>Les créatures peuvent apparaître de différentes manières. La
+                    plupart des créatures apparaissent naturellement, en fonction du
+                    niveau de lumière, du biome et de leur environnement, souvent
+                    par groupes d'individus de même espèce. Les créatures
+                    apparaissent généralement lors de la génération initiale des
+                    chunks. La plupart des créatures passives ont également la
+                    capacité de se reproduire, engendrant des versions « bébé »
+                    d'elles-mêmes.  Source: <a href="https://minecraft.fandom.com/fr/wiki/Cr%C3%A9atures" target="_blank">minecraft fandom</a></p>
+            </div>
+            <div class="rgraph">
+                <div id="tableau"></div>
+            </div>
+
+            <div class="bloc-lave"></div>
+        </section>
+    </main>
+    <footer>
+        Gabriel Leblanc - PMI 2021
+    </footer>
+
+    <script src="./assets/scripts/RGraph.svg.common.core.js"></script>
+    <script src="./assets/scripts/RGraph.svg.common.tooltips.js"></script>
+    <script src="./assets/scripts/RGraph.svg.line.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.js"
+        integrity="sha512-dPZE9SLz1NVUX9tSX9TYOs2SyaJRBZC9ogOc/VasDFSFrxSDkXv3ZCdgkG8/AzHQ+YVklyqDgSS3aDgMradlNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/scripts/main.js"></script>
+</body>
+
+</html>

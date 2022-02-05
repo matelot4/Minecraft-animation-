@@ -1,0 +1,274 @@
+@import "variables-font.scss";
+
+main {
+  flex-grow: 1;
+  font-family: monospace;
+  // overflow: hidden;
+
+  // SECTI0N 1 - AU SOL
+  .gazon {
+    min-height: 100vh;
+    background-image: url("../../img/gazon-png.png");
+    background-color: $couleur-ciel;
+    background-position: bottom left;
+    margin: 0;
+    padding: 1rem;
+    position: relative;
+
+    .steve {
+      height: 40%;
+      position: absolute;
+      bottom: 15%;
+      left: 0;
+      min-height: 283px;
+    }
+
+    .container-bloc {
+      width: 20rem;
+      right: 15%;
+      top: 20%;
+      position: absolute;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+
+      .poule {
+        height: 91px;
+        width: 75px;
+        justify-content: end;
+      }
+    }
+
+    .enderman {
+      height: 50%;
+      position: absolute;
+      right: 5%;
+      bottom: 15%;
+    }
+
+    .ender-vol {
+      height: 50%;
+      position: absolute;
+      left: 30%;
+      bottom: 15%;
+      opacity: 0;
+    }
+
+    .bloc {
+      height: 175px;
+      width: 175px;
+      position: absolute;
+      right: 5%;
+      bottom: 0;
+      background-color: $couleur-ciel;
+      opacity: 0;
+    }
+  }
+
+  .nuage {
+    width: 100%;
+  }
+
+  .bloc-txt {
+    background-color: rgba(255, 255, 255, 0.514);
+    height: 5rem;
+    text-align: center;
+    bottom: 0;
+    display: flex;
+
+    h3 {
+      margin: auto;
+      font-size: 1.5rem;
+    }
+  }
+
+  //  SECTION 2 - DANS LA TERRE
+  .terre {
+    min-height: 100vh;
+    background-position: cover;
+    padding: 1rem;
+    // overflow: hidden;
+
+    .introduction {
+      background-color: $couleur-terre;
+      max-width: 95%;
+      margin: auto;
+      margin-top: 10rem;
+      border: solid black 3px;
+      max-width: 600px;
+
+      h2 {
+        text-align: center;
+      }
+
+      figure {
+        padding: 0.25rem 0.25rem 2rem 0.25rem;
+        margin: 0 auto;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        width: 387px;
+        height: 577px;
+        margin-top: 1rem;
+
+        img {
+          margin: auto;
+          border: solid black 5px;
+        }
+
+        figcaption {
+          text-align: center;
+          color: white;
+          margin: auto;
+        }
+      }
+
+      p {
+        color: white;
+        padding: 0 2rem;
+      }
+
+      p:last-child {
+        padding-bottom: 1rem;
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover, &:active, &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    #modale {
+      position: relative;
+    }
+
+    .chest {
+      z-index: 1000;
+    }
+
+    canvas {
+      width: 200px;
+      height: 200px;
+      border: solid rgb(0, 0, 0) 3px;
+      margin: auto;
+    }
+    
+
+    .biomes {
+      background-color: $couleur-terre-fonce;
+      margin: auto;
+      margin-top: 15rem;
+      border: solid black 3px;
+      max-width: 600px;
+
+      p {
+        color: white;
+        padding: 0 2rem 1rem 2rem;
+      }
+
+      h2 {
+        color: white;
+        text-align: center;
+      }
+    }
+
+    .chest-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .modale-chest {
+      display: none;
+      position: fixed !important;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.781);
+    }
+
+    .contenu-modale {
+      background-color: #181818;
+      margin: 15% auto;
+      padding: 20px;
+      border: 3px solid rgb(0, 0, 0);
+      height: 50%;
+      width: 50%;
+    }
+
+    .fermer-modale {
+      color: rgb(255, 255, 255);
+      background-color: transparent;
+      font-size: 50px;
+      font-weight: bold;
+      border: none;
+      float: right;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        color: #1aa709;
+        text-decoration: none;
+      }
+    }
+
+    .dessin-creeper {
+      display: flex;
+      height: 100%;
+    }
+
+    #dessin {
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  //  SECTION 3 - DANS LA ROCHE
+  .roche {
+    min-height: 100vh;
+    background-image: url("../../img/fond-roche-3.jpg");
+    padding: 1rem;
+
+    a {
+      color: black;
+      text-decoration: none;
+
+      &:hover, &:active, &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    .rgraph {
+      background-color: rgba(255, 255, 255, 0.288);
+      border-radius: 30px;
+      padding-left: 10px;
+      padding: 1rem;
+      display: flex;
+      margin: 2rem auto;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .creature {
+      background-color: gray;
+      padding: 1rem;
+      border: solid black 3px;
+      margin: auto;
+      max-width: 600px;
+
+      opacity: 0;
+    }
+
+    #tableau {
+      height: 500px;
+      width: 600px;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.df6dc375.css">
+    <title>Minecraft</title>
+</head>
+
+<body>
+    <header>
+        <h1>Minecraft</h1>
+        <div class="container-header">
+            <img class="animate__animated minecraft-logo animate__bounceInDown" src="/minecraft-logo-2.5db8c7b1.png" alt="Logo minecraft">
+            <div class="container-texte animate__animated  animate__backInRight">
+                <p class="madeby ">Par Gabriel Leblanc</p>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="gazon">
+            <div class="container-nuage">
+                <img class="poule animate__animated animate__shakeY" src="/chicken.f6a60e5f.png" alt="Poule du jeu minecraft">
+                <div class="nuage animate__animated animate__fadeIn animate__slower">
+                    <p>Un jeu d'aventure!</p>
+                </div>
+            </div>
+            <img class="steve animate__animated animate__bounceInLeft" src="/steve.165c2d05.png" alt="Personnage minecraft avec une épée en diamant">
+        </section>
+
+        <section class="terre">
+            <div class="introduction">
+                <figure>
+                    <img src="/minecraft-cover.ce7a6abe.png" alt="Couverture du jeu minecraft">
+                    <figcaption>Poster du jeu de minecraft</figcaption>
+                </figure>
+                <h2>Minecraft, le jeu</h2>
+                <p class="intro-txt">Minecraft est un jeu vidéo de type aventure « bac à sable » développé par le Suédois
+                    Markus Persson, alias <i>Notch</i>, puis par la société Mojang Studios.
+                    Il s'agit d'un univers composé de voxels et généré
+                    aléatoirement, qui intègre un système d'artisanat axé sur
+                    l'exploitation puis la transformation de ressources naturelles
+                    (minéralogiques, fossiles, animales et végétales).</p> 
+                    <!-- wikipedia -->
+                <p>
+                    
+                    Minecraft mélange construction et aventure. Il permet à ses joueurs de
+                    manipuler un monde en trois dimensions, composé entièrement
+                    de blocs à détruire, placer et transformer. Jouable en solo
+                    ou en multijoueur, différents modes de jeu sont disponibles
+                    :
+<!-- https://minecraft.fandom.com/fr/wiki/Biome -->
+                </p>
+
+            </div>
+
+            <img class="spider animate__animated animate__bounceInLeft" src="/spiderwhite.3b9ef357.png" alt="Araignée du jeu de minecraft">
+            <div>
+                <h2>Les biomes</h2>
+                <p>Le monde de minecraft est composé de plusieurs biômes. Les
+                biomes sont des régions dans un monde Minecraft avec différentes
+                caractéristiques géographiques – végétaux, hauteurs, climats,
+                degrés d'humidité, couleurs de ciel, de feuillage ou de l'eau.
+                Ils peuvent aussi abriter des structures naturelles et des
+                créatures spéciales.</p>
+
+                <p>Les biomes sont créés aléatoirement pendant la génération du
+                monde. Il existe 67 biomes dans monde normal, 5 biomes dans le
+                Nether, 5 biomes dans l'End et 3 biomes inutilisés pour un total
+                de 79 biomes en comptant toutes les variations et les biomes
+                techniques — la plupart des biomes étant des variations des
+                biomes principaux (forêts, prairies, montagnes, déserts,
+                océans).</p>
+            </div>
+        </section>
+
+        <section class="roche">
+
+            <canvas id="dessin"></canvas>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Nesciunt id ex doloribus sit voluptatibus impedit error
+                necessitatibus iste reiciendis aut nemo eos consequatur ea eligendi
+                perspiciatis, veniam temporibus similique, sequi sed commodi
+                tenetur? Repudiandae ducimus eligendi consequatur est earum iusto
+                debitis modi, distinctio ratione rem dolore, inventore libero
+                commodi esse.</p>
+
+                <div class="rgraph">
+
+                    <div id="tableau"></div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        Gabriel Leblanc
+    </footer>
+
+    <script src="/index.b87c5810.js"></script>
+    <script src="/index.df262f2a.js"></script>
+    <script src="/index.5fb5518a.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.min.js" integrity="sha512-vYYoQJKYzaJQaOaYxaJhhmxikOJ2SEgHwmCNa0EMP0aRr7opdt4HHrorAwnCyPm8bdW/JBApIomo85YaBX81zA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/index.922ef7ff.js" defer=""></script>
+</body>
+
+</html>

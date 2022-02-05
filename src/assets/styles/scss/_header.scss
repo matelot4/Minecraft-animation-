@@ -1,0 +1,54 @@
+@import "variables-font.scss";
+
+header {
+  margin: 0;
+  padding: 1rem;
+  min-height: 100vh;
+  font-family: "Minecraft";
+  color: yellow;
+  background-image: url("/src/assets/img/fond-ciel.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #74b6ff;
+  background-position: left bottom;
+  display: flex;
+  flex-direction: column;
+
+  .container-header {
+    max-height: 300px;
+    margin: 10rem auto;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+    img {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    p {
+      transform: rotate(-15deg);
+    }
+
+    .container-texte {
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      font-size: 90%;
+      overflow: hidden;
+    }
+  }
+
+  h1 {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    p {
+      font-size: 150%;
+    }
+  }
+}

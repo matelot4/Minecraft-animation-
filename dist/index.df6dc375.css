@@ -1,0 +1,417 @@
+@font-face {
+  font-family: "Pixeled";
+  src: url("pixeled-webfont.95430abf.woff") format("woff"), url("pixeled-webfont.95430abf.woff") format("woff2");
+  font-family: "Minecraft";
+  src: url("minecraft-webfont.b9397228.woff") format("woff"), url("minecraft-webfont.0776355f.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Pixeled";
+  src: url("pixeled-webfont.95430abf.woff") format("woff"), url("pixeled-webfont.95430abf.woff") format("woff2");
+  font-family: "Minecraft";
+  src: url("minecraft-webfont.b9397228.woff") format("woff"), url("minecraft-webfont.0776355f.woff2") format("woff2");
+}
+header {
+  margin: 0;
+  padding: 1rem;
+  min-height: 100vh;
+  font-family: "Minecraft";
+  color: yellow;
+  background-image: url("fond-ciel.1e27bbc6.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #74B6FF;
+  background-position: left bottom;
+  display: flex;
+  flex-direction: column;
+}
+header .container-header {
+  max-height: 300px;
+  margin: 10rem auto;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+header .container-header img {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+header .container-header p {
+  transform: rotate(-15deg);
+}
+header .container-header .container-texte {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  font-size: 90%;
+  overflow: hidden;
+}
+header h1 {
+  visibility: hidden;
+}
+@media screen and (min-width: 1024px) {
+  header p {
+    font-size: 150%;
+  }
+}
+@font-face {
+  font-family: "Pixeled";
+  src: url("pixeled-webfont.95430abf.woff") format("woff"), url("pixeled-webfont.95430abf.woff") format("woff2");
+  font-family: "Minecraft";
+  src: url("minecraft-webfont.b9397228.woff") format("woff"), url("minecraft-webfont.0776355f.woff2") format("woff2");
+}
+main {
+  flex-grow: 1;
+  font-family: monospace;
+  overflow: hidden;
+}
+main .gazon {
+  min-height: 100vh;
+  background-image: url("gazon-png.27e13733.png");
+  background-color: #acd2ff;
+  background-position: bottom left;
+  margin: 0;
+  padding: 1rem;
+  position: relative;
+}
+main .gazon .steve {
+  height: 40%;
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  min-height: 283px;
+}
+main .gazon .container-nuage {
+  width: 20rem;
+  right: 15%;
+  top: 20%;
+  position: absolute;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+main .gazon .container-nuage .poule {
+  height: 91px;
+  width: 75px;
+  justify-content: end;
+}
+main .gazon .enderman {
+  height: 50%;
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+}
+main .gazon .ender-vol {
+  height: 50%;
+  position: absolute;
+  left: 30%;
+  bottom: 15%;
+}
+main .gazon .bloc {
+  height: 175px;
+  width: 175px;
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  background-color: #acd2ff;
+}
+main .nuage {
+  width: 100%;
+}
+main .bloc-txt {
+  background-color: rgba(255, 255, 255, 0.514);
+  height: 5rem;
+  text-align: center;
+  bottom: 0;
+  display: flex;
+}
+main .bloc-txt p {
+  margin: auto;
+  font-size: 1.5rem;
+}
+main .terre {
+  min-height: 100vh;
+  background-position: cover;
+  padding: 1rem;
+  overflow: hidden;
+}
+main .terre .introduction {
+  background-color: #423021;
+  max-width: 95%;
+  margin: auto;
+  margin-top: 10rem;
+  border: solid black 3px;
+  max-width: 600px;
+}
+main .terre .introduction h2 {
+  text-align: center;
+}
+main .terre .introduction figure {
+  padding: 0.25rem 0.25rem 2rem 0.25rem;
+  margin: 0 auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 387px;
+  height: 577px;
+  margin-top: 1rem;
+}
+main .terre .introduction figure img {
+  margin: auto;
+  border: solid black 5px;
+}
+main .terre .introduction figure figcaption {
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+main .terre .introduction p {
+  color: white;
+  padding: 0 2rem;
+}
+main .terre .introduction p:last-child {
+  padding-bottom: 1rem;
+}
+main .terre .introduction #modale {
+  position: relative;
+}
+main .terre .introduction .chest {
+  cursor: pointer;
+}
+main .terre .biomes {
+  background-color: #281D15;
+  margin: auto;
+  margin-top: 15rem;
+  border: solid black 3px;
+  max-width: 600px;
+}
+main .terre .biomes p {
+  color: white;
+  padding: 0 2rem 1rem 2rem;
+}
+main .terre .biomes h2 {
+  color: white;
+  text-align: center;
+}
+main .roche {
+  min-height: 100vh;
+  background-image: url("fond-roche-3.3f571ab9.jpg");
+  padding: 1rem;
+}
+main .roche .rgraph {
+  background-color: rgba(255, 255, 255, 0.288);
+  border-radius: 30px;
+  padding-left: 10px;
+  margin: 1rem auto;
+}
+main .roche .creature {
+  background-color: gray;
+  padding: 1rem;
+  border: solid black 3px;
+  margin: 1rem 0;
+  margin: auto;
+}
+@media sceen and (max-width: 600) {
+  .rgraph {
+    max-width: 470px;
+  }
+}
+@media sceen and (max-width: 1100) {
+  .rgraph {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .gazon .enderman, .gazon .ender-vol, .gazon .bloc {
+    visibility: hidden;
+  }
+
+  .terre {
+    background-image: url("terre-png.65410aa6.jpg");
+    overflow: hidden;
+  }
+  .terre .spider {
+    height: 200px;
+    position: absolute;
+    right: 0px;
+    margin: 3rem 0;
+  }
+  .terre .biomes {
+    margin-top: 10rem;
+  }
+  .terre .chest {
+    height: 150px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  @keyframes the-spider {
+    0% {
+      left: 0%;
+      top: 0%;
+    }
+    25% {
+      left: 13%;
+      top: 2%;
+    }
+    50% {
+      left: 13%;
+      top: 35%;
+    }
+    75% {
+      left: 40%;
+      top: 35%;
+    }
+    100% {
+      left: 40%;
+      top: 100%;
+    }
+  }
+  .terre {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-image: url("terre-deskop-fond.e654d8f5.png");
+    position: relative;
+  }
+  .terre .introduction {
+    grid-column: 7/13;
+    grid-row: 1/6;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    z-index: 10;
+  }
+  .terre .spider {
+    grid-column: 1/13;
+    grid-row: 2/6;
+    height: 150px;
+    animation-name: the-spider;
+    animation-duration: 5s;
+    position: relative;
+  }
+  .terre .biomes {
+    grid-column: 1/6;
+    grid-row: 3/6;
+    margin-top: 2rem;
+  }
+  .terre .bloc-coupe-roche {
+    background-image: url("bloc-deco-roche.d38fc92e.png");
+    height: 250px;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+  }
+  .terre .bloc-deco-terre {
+    background-image: url("bloc-terre.a0254e09.png");
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .terre .bloc-deco-terre-1 {
+    background-image: url("bloc-terre.a0254e09.png");
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .terre .bloc-deco-terre-2 {
+    background-image: url("bloc-terre.a0254e09.png");
+    height: 800px;
+    width: 200px;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+  }
+  .terre .bloc-deco-terre-3 {
+    background-image: url("bloc-terre.a0254e09.png");
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .terre .biomes {
+    margin-left: 3rem;
+    z-index: 10;
+  }
+  .terre .chest {
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    cursor: pointer;
+  }
+
+  .roche {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column: 1/13;
+  }
+  .roche #dessin {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+  .roche .creature {
+    grid-column: 1/6;
+    grid-row: 2/3;
+  }
+  .roche .rgraph {
+    grid-column: 7/12;
+  }
+  .roche #tableau {
+    grid-column: 1/6;
+    grid-row: 2/3;
+  }
+}
+footer {
+  background-image: url("lava-minecraft-png-1.fb659c86.png");
+  min-height: 10vh;
+  font-size: 1.5rem;
+  font-family: "Minecraft";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.minecraft-logo {
+  animation-name: bounceInDown;
+  animation-duration: 1s;
+}
+.container-texte {
+  animation-name: backInRight;
+  animation-duration: 1.5s;
+}
+.shake-y {
+  animation-name: shakeY;
+  animation-duration: 1.5s;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+canvas {
+  width: 200px;
+  height: 200px;
+  border: solid black 3px;
+  margin: auto;
+}
+#tableau {
+  height: 500px;
+  width: 700px;
+}
+/*# sourceMappingURL=index.df6dc375.css.map */

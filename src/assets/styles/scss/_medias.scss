@@ -1,0 +1,175 @@
+@import "variables-font.scss";
+
+@media screen and (max-width: 1023px) {
+  .gazon {
+    .enderman,
+    .ender-vol,
+    .bloc {
+      visibility: hidden;
+    }
+  }
+
+  .terre {
+    background-image: url("../../img/terre-png.jpg");
+
+    .spider {
+      height: 150px;
+      position: absolute;
+      margin: 3rem 0;
+      animation-name: spider-mobile;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+    }
+
+    .biomes {
+      margin-top: 10rem;
+    }
+
+    .container-chest {
+      display: flex;
+      width: 100%;
+    }
+
+    .chest-btn {
+      margin: auto;
+    }
+
+    .chest {
+      height: 150px;
+      margin: 2rem 0;
+    }
+  }
+
+  .roche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .terre {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-image: url("./assets/img/terre-deskop-fond.png");
+    position: relative;
+
+    .introduction {
+      grid-column: 7/13;
+      grid-row: 1/6;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+      z-index: 10;
+    }
+
+    .spider {
+      grid-column: 1/13;
+      grid-row: 2/6;
+      height: 150px;
+      animation-name: the-spider;
+      animation-duration: 5s;
+      animation-delay: 6000ms;
+      position: relative;
+      animation-fill-mode: forwards;
+
+    }
+
+    .biomes {
+      grid-column: 1/6;
+      grid-row: 3/6;
+      margin-top: 2rem;
+    }
+
+    .bloc-coupe-roche {
+      background-image: url("/src/assets/img/bloc-deco-roche.png");
+      height: 250px;
+      width: 500px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 0;
+    }
+
+    div[class^="bloc-deco"]{
+      position: absolute;
+      z-index: 1;
+    }
+
+    .bloc-deco-terre-1 {
+      background-image: url("/src/assets/img/bloc-terre.png");
+      height: 200px;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .bloc-deco-terre-2 {
+      background-image: url("/src/assets/img/bloc-terre.png");
+      height: 800px;
+      width: 200px;
+      top: 30%;
+      left: 0;
+    }
+    .bloc-deco-terre-3 {
+      background-image: url("/src/assets/img/bloc-terre.png");
+      width: 50%;
+      top: 0;
+      right: 0;
+    }
+
+    .bloc-deco-terre-4 {
+      background-image: url("/src/assets/img/bloc-terre.png");
+      height: 200px;
+      width: 400px;
+      bottom: 0;
+      left: 0;
+    }
+    .biomes {
+      margin-left: 3rem;
+      z-index: 10;
+    }
+
+    .chest,
+    .chest-btn {
+      height: 120px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+    }
+
+    .modale-chest {
+      z-index: 1000 !important;
+      width: 80%;
+      height: 50%;
+    }
+  }
+
+  .roche {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-column: 1/13;
+    position: relative;
+
+    .creature {
+      grid-column: 1/6;
+      grid-row: 1/3;
+    }
+
+    .rgraph {
+      grid-column: 7/13;
+      grid-row: 3/6;
+    }
+
+    .bloc-lave {
+      background-image: url("/src/assets/img/bloc-lave-deco.png");
+      height: 300px;
+      width: 400px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+  }
+}

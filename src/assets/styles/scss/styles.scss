@@ -1,0 +1,21 @@
+@import "variables-font.scss";
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+@import "animations.scss";
+@import "medias.scss";
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
